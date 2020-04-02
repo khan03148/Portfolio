@@ -16,8 +16,9 @@ body {
 hr{
   
  
-   
-    border-top: 2px solid rgb(20, 238, 238);}
+  height:1.2px;
+  color:solid rgb(20, 238, 238);
+    }
    
 
 
