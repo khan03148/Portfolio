@@ -1,357 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jahangir Khan | Cloud Engineer</title>
 
-    <title>Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
-    
-   
+<style>
+body {
+  margin:0;
+  font-family: 'Poppins', sans-serif;
+  background:#0f172a;
+  color:#e2e8f0;
+}
 
-    <!-- Add icon library -->
+.container {
+  width:90%;
+  margin:auto;
+}
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
-   
-    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/main.css">
+header {
+  text-align:center;
+  padding:100px 20px;
+}
 
+h1 { font-size:40px; }
+h2 { color:#38bdf8; }
+
+.btn {
+  display:inline-block;
+  margin:10px;
+  padding:10px 20px;
+  border-radius:8px;
+  text-decoration:none;
+  color:white;
+  background:#1e293b;
+}
+
+.section {
+  padding:60px 0;
+}
+
+.grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+
+.card {
+  background:#1e293b;
+  padding:20px;
+  border-radius:15px;
+  transition:0.3s;
+}
+
+.card:hover {
+  transform:translateY(-10px);
+}
+
+ul { padding-left:20px; }
+
+.badge {
+  display:inline-block;
+  background:#38bdf8;
+  color:#000;
+  padding:5px 10px;
+  margin:5px;
+  border-radius:6px;
+  font-size:12px;
+}
+
+@media(max-width:768px){
+  h1 {font-size:28px;}
+}
+</style>
 </head>
 
+<body>
+
+<!-- HERO -->
+<header>
+  <h1>Jahangir Khan</h1>
+  <h2 id="typing"></h2>
+
+  <p>
+    Cloud Engineer | AWS Certified Solutions Architect | DevOps Engineer  
+    <br>5+ Years Frontend Development Experience
+  </p>
+
+  <a class="btn" href="https://github.com/khan03148">GitHub</a>
+  <a class="btn" href="https://www.linkedin.com/in/jahangir-khan-0337ab174">LinkedIn</a>
+</header>
+
+<!-- ABOUT -->
+<section class="section container">
+  <h2>About Me</h2>
+  <p>
+    Cloud Engineer and AWS Certified Solutions Architect with 5+ years of experience in frontend development.
+    Recently transitioned into DevOps through hands-on projects and AWS training.
+  </p>
+
+  <ul>
+    <li>AWS Certified Cloud Practitioner</li>
+    <li>AWS Certified Solutions Architect – Associate</li>
+    <li>AWS re/Start Graduate</li>
+    <li>Experience with Docker, Linux, CI/CD pipelines</li>
+  </ul>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="section container">
+  <h2>Experience</h2>
+
+  <div class="card">
+    <h3>Frontend Developer – UnitedPrint GmbH (2021–2024)</h3>
+    <ul>
+      <li>Developed scalable React applications</li>
+      <li>Testing, debugging, and release cycles</li>
+      <li>Agile work with Git, Jira, Confluence</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>Web Developer – Intelligent Graphics AG</h3>
+    <ul>
+      <li>3D configurator UI development</li>
+      <li>Docker, GraphQL, Prisma usage</li>
+      <li>Cypress testing</li>
+    </ul>
+  </div>
+
+</section>
+
+<!-- SKILLS -->
+<section class="section container">
+  <h2>Skills</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <h3>Cloud & DevOps</h3>
+      <span class="badge">AWS</span>
+      <span class="badge">Docker</span>
+      <span class="badge">CI/CD</span>
+      <span class="badge">Terraform</span>
+      <span class="badge">Ansible</span>
+      <span class="badge">Kubernetes</span>
+    </div>
+
+    <div class="card">
+      <h3>Monitoring & AI</h3>
+      <span class="badge">Prometheus</span>
+      <span class="badge">Grafana</span>
+      <span class="badge">Loki</span>
+      <span class="badge">GitHub Copilot</span>
+      <span class="badge">Amazon Q</span>
+    </div>
+
+    <div class="card">
+      <h3>Frontend</h3>
+      <span class="badge">React</span>
+      <span class="badge">TypeScript</span>
+      <span class="badge">Redux</span>
+      <span class="badge">Next.js</span>
+    </div>
+
+  </div>
+</section>
+
+<!-- DEVOPS LEARNING -->
+<section class="section container">
+  <h2>DevOps Training & Projects</h2>
+
+  <div class="card">
+    <p>
+      Completed a full DevOps learning path covering Linux, AWS, CI/CD, Terraform,
+      Ansible, Docker, Kubernetes, and Monitoring tools.
+    </p>
+
+    <ul>
+      <li>Built CI/CD pipelines using Jenkins, GitHub Actions, GitLab</li>
+      <li>Deployed applications on AWS and Kubernetes</li>
+      <li>Infrastructure as Code using Terraform</li>
+      <li>Monitoring using Prometheus & Grafana</li>
+      <li>GitOps workflows and automation</li>
+    </ul>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="section container">
+  <h2>Projects</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <h3>Infowerk</h3>
+      <p>React | TypeScript | Redux</p>
+      <a class="btn" href="https://infowerk.com/de">Live</a>
+    </div>
+
+    <div class="card">
+      <h3>3D Configurator</h3>
+      <p>React | GraphQL | Docker</p>
+      <a class="btn" href="https://www.intelligentgraphics.ag/">Live</a>
+    </div>
+
+    <div class="card">
+      <h3>DevOps Projects</h3>
+      <p>AWS | Docker | Kubernetes | CI/CD</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section container">
+  <h2>Contact</h2>
+  <p>Email: khan03148@gmail.com</p>
+  <p>Location: Ilmenau, Germany</p>
+</section>
+
+<!-- TYPING -->
+<script>
+const words = ["Cloud Engineer", "AWS Certified", "DevOps Engineer"];
+let i = 0, j = 0, current = "", isDeleting = false;
+
+function type() {
+  current = words[i];
+  if (isDeleting) j--;
+  else j++;
+
+  document.getElementById("typing").innerText = current.substring(0, j);
+
+  if (!isDeleting && j === current.length) {
+    isDeleting = true;
+    setTimeout(type, 1000);
+    return;
+  }
+
+  if (isDeleting && j === 0) {
+    isDeleting = false;
+    i = (i + 1) % words.length;
+  }
+
+  setTimeout(type, isDeleting ? 50 : 100);
+}
+
+type();
+</script>
 
-<body data-spy="scroll">
-    <nav id="site-nav" class="navbar navbar-fixed-top navbar-custom">
-        <div class="container">
-            <div class="navbar-header">
-
-                <!-- logo -->
-                <div class="site-branding">
-                    <a class="logo" href="#">
-
-                        <!-- logo image  -->
-                        <img style="border-radius:50%;" src="assets/images/logo.svg" height="90px" width="90"
-                            alt="Logo">
-
-                        Portfolio
-                    </a>
-                </div>
-
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-items" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-
-            </div><!-- /.navbar-header -->
-
-            <div  id="navbar-items" class="collapse navbar-collapse" aria-expanded="false">
-                <ul class="nav navbar-nav navbar-right">
-
-                    <!-- navigation menu -->
-                    <li class="active"><a data-scroll href="#about">About Me</a></li>
-                    <li><a data-scroll href="#Skills">Skills</a></li>
-
-                    <li><a data-scroll href="#speakers">My Projects</a></li>
-
-
-
-
-                </ul>
-            </div>
-        </div><!-- /.container -->
-    </nav>
-
-    <header id="site-header" class="site-header ">
-        <div class="intro">
-
-        <div class="animated infinite bounce delay-2s">
-                <img style="border-radius:50%; display: flex; margin: auto; padding-top:40px;" alt="code" height="200px"
-                    width="200px" src="assets/images/code.svg">
-
-                <h1>Front-End Web-Developer</h1></div>
-
-                <a class="btn btn-info" href="https://github.com/khan03148">GitHub</a>
-
-                 <!-- <a class="btn btn-info" href="assets/images/cv.pdf"> Resume</a>-->
-
-        </div>
-    </header>
-    <!-- About section -->
-    <section id="about" class="section about">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6">
-
-                    <h3 class="skew" style="color:#5ec1de;"><u>About</u></h3>
-
-                    <blockquote>
-                        <b>“Skilled and results-driven Front-End Web Developer with hands-on experience in building scalable, responsive web applications using React, TypeScript, Redux, and other modern front-end technologies.
-                            Recognized for writing clean, maintainable code and thriving in fast-paced, agile environments. Quick to learn new tools and frameworks, with a proven ability to work independently or collaboratively.
-                            Strong communication skills, critical thinking, and a dependable work ethic have consistently earned praise from employers and team leads.”
-                        </b>
-                        <hr>
-<!--                         <cite>Jahangir Khan</cite> -->
-                    </blockquote>
-                    <figure>
-                        <img style="border-radius:50%;" alt="" class="img-responsive" src="assets/images/me.svg">
-                    </figure>
-
-                </div><!-- /.col-sm-6 -->
-
-                <div class="col-sm-6">
-
-                    <div class="card">
-                        <h3 class="skew" style="color:#5ec1de;"><u>Goals</u></h3>
-                        <p>Become a well rounded Full_stack developer that can code in the following languages:</p>
-                        <ul class="skills">
-                            <li>JavaScript</li>
-                            <li>TypeScript</li>
-                            <li>ReactJS</li>
-                            <li>express.js</li>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>SAAS</li>
-                            <li>Bootstrap</li>
-                            <li>SQL</li>
-                        </ul>
-                        <p>I’d like to work for a web design firm helping clients create an impressive online presence.
-                        </p>
-                        <h2>Contact</h2>
-                        <p>If you'd like to get in touch with me,.Click on the Phone icon....</p>
-                        <!-- Add font awesome icons -->
-
-                        <a href="https://www.linkedin.com/in/jahangir-khan-0337ab174/" class="fa fa-linkedin"></a>
-                        <a href="tel:01784603106" class="fa fa-whatsapp"></a>
-                        <a href="https://www.facebook.com/jahangirkhan0314" class="fa fa-facebook"></a>
-
-
-                    </div>
-
-
-
-
-                </div><!-- /.col-sm-6 -->
-            </div><!-- /.row -->
-        </div><!-- /.container -->
-    </section>
-
-    <!-- End About section -->
-
-
-    <!-- Skills section -->
-    <section id="Skills" class="section about text-center">
-        <h2 class="container animated infinite swing delay-2s" style="color:#5ec1de;">Skill Set</h2>
-        
-        <div class="container">
-            <hr>
-
-            <div class="row skill">
-
-                <div class="col-sm-4">
-
-
-                    <img style="border-radius:50%;" class="img-responsive center-block" src="assets/images/log.svg">
-                    <h3 style="color:black;">JavaScript_Libraries</h3>
-                    <hr>
-
-
-                    <cite>React.js<br>Context-Api<br>Redux<br>React-router</cite>
-                    <hr>
-                </div>
-
-                <div class="col-sm-4">
-
-
-                    <img style="border-radius:50%;" class="img-responsive center-block" src="assets/images/js.svg">
-
-                    <h3 style="color:black;">JavaScript</h3>
-                    <hr>
-                    Vanilla Js<br>TypeScript <br> <br><br>
-                    <hr>
-
-                </div>
-
-                <div class="col-sm-4">
-
-
-                    <img style="border-radius:50%;" class="img-responsive center-block" src="assets/images/html5.svg">
-                    <h3 style="color:black;">HTML</h3>
-                    <hr>
-                    <cite>HTML5<br>CCS3&SCSS&LESS<br>Bootstrap<br>marterial UI </cite>
-                    <hr>
-                </div>
-
-
-            </div><!-- container -->
-    </section>
-    <!--End  Skills section -->
-
-    <!-- Projects section -->
-    <section id="speakers" class="section speakers">
-        <div class="container" >
-
-        <div class="row">
-                <div class="col-md-12 text-center" style="color: #1a0202; border-top:20px;">
-
-                    <h2 class="text-center animated infinite swing delay-2s" style="color:#5ec1de;">Projects</h2>
-                    
-                </div>
-             
-            </div>
-            <hr>
-            <div class="row">
-                 <div class="col-md-3">
-
-                    <div class="speaker">
-
-                        <figure>
-
-                            <a href="https://infowerk.com/de"><img alt=""
-                                    class="img-responsive center-block" src="assets/images/speakers/infowerk.gif"></a>
-                            <div class="animated infinite pulse delay-3s">
-                                <a href="https://github.com/khan03148"><span
-                                        class="badge badge-pill badge-info">GitHub</span> </a>
-                                <a href="https://github.com/khan03148"> <span
-                                        class="badge badge-pill badge-info">To-Code</span> </a>
-                            </div>
-                        </figure>
-                        <h4>E-Commerce</h4>
-                        <p>React,Typescript,JavaScript,Html,ccs3,all payments type</p>
-                    </div>
-                </div>
-                 <div class="col-md-3">
-
-                    <div class="speaker">
-
-                        <figure>
-
-                            <a href="https://e-commercee.netlify.app/"><img alt=""
-                                    class="img-responsive center-block" src="assets/images/speakers/Ecom.gif"></a>
-                            <div class="animated infinite pulse delay-3s">
-                                <a href="https://github.com/khan03148"><span
-                                        class="badge badge-pill badge-info">GitHub</span> </a>
-                                <a href="https://github.com/khan03148/E-Commerce/tree/master/src"> <span
-                                        class="badge badge-pill badge-info">To-Code</span> </a>
-                            </div>
-                        </figure>
-
-
-                        <h4>E-Commerce</h4>
-                        <p>Build using React,Context api,JavaScript,bootstrap,
-                            Html,ccs3,Paypal payment</p>
-                    </div>
-                </div>
-
-                <div class="col-md-3">
-
-                    <div class="speaker">
-
-                        <figure>
-
-                            <a href="https://khan03148.github.io/BeachResturant/"><img alt=""
-                                    class="img-responsive center-block" src="assets/images/speakers/beach.gif"></a>
-                            <div class="animated infinite pulse delay-3s">
-                                <a href="https://github.com/khan03148"><span
-                                        class="badge badge-pill badge-info">GitHub</span> </a>
-                                <a href="https://github.com/khan03148/BeachResturant/tree/master"> <span
-                                        class="badge badge-pill badge-info">To-Code</span> </a>
-                            </div>
-                        </figure>
-
-
-                        <h4>Amazing Hotel</h4>
-                        <p>Build using React,Context api,JavaScript,Html,ccs3,
-                            React-iocons</p>
-                    </div>
-                </div>
-                <div class="col-md-3">
-
-                    <div class="speaker">
-
-                        <figure>
-
-                            <a href="https://khan03148.github.io/RecipeApp/"><img alt=""
-                                    class="img-responsive center-block" src="assets/images/speakers/recipe.gif"></a>
-                            <div class="animated infinite pulse delay-3s">
-                            <a href="https://github.com/khan03148"><span
-                                    class="badge badge-pill badge-info">GitHub</span> </a>
-
-                            <a href="https://github.com/khan03148/RecipeApp/tree/master"> <span
-                                    class="badge badge-pill badge-primary">To-Code</span> </a></div>
-                        </figure>
-
-
-                        <h4>Recipe-App</h4>
-                        <p>Build using React Hooks,JavaScript,Html5,
-                            bootstrap,ccs3</p>
-
-                    </div>
-                </div>
-
-
-
-                <div class="col-md-3">
-
-                    <div class="speaker">
-
-                        <figure>
-
-                            <a href="https://khan03148.github.io/David-bristo-china-Resturant/site/index.html"><img
-                                    alt="" class="img-responsive center-block"
-                                    src="assets/images/speakers/david.gif"></a>
-                            <div class="animated infinite pulse delay-3s">
-                            <a href="https://github.com/khan03148"><span
-                                    class="badge badge-pill badge-info">GitHub</span> </a>
-                            <a href="https://github.com/khan03148/David-bristo-china-Resturant/tree/master/site"> <span
-                                    class="badge badge-pill badge-primary">To-Code</span> </a>
-                            </div>
-                        </figure>
-
-
-                        <h4>Resturant-website</h4>
-                        <p>Build using JavaScript,Jquery,Html,ccs3</p>
-                    </div>
-                </div>
-
-
-
-               
-            </div>
-
-    </section>
-
-
-    <!-- End project section -->
-
-    <section id="location" class="section location">
-        <div class="container">
-            <hr>
-            <div class="row">
-                <div class="col-sm-3">
-                    <h3 class="section-title" style="color:#5ec1de;">Address</h3>
-                    <address>
-                        <p><br> Ilmenau
-                            98693 <br> Phone: 01784603106 <br>Email:khan03148@gmail.com</p>
-                    </address>
-                </div>
-                <div class="col-sm-9">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2528.1078331022863!2d10.93038121516451!3d50.680823378620325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a38d4b1a1f68cd%3A0x906f550902dd6cd5!2stechnical%20university%20Ilmenau!5e0!3m2!1sen!2sde!4v1583410450330!5m2!1sen!2sde"
-                        width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- script -->
-
-    <script src="jquery/dist/jquery.min.js"></script>
-    <script src="assets/js/main.js"></script>
-    <script src="bootstrap/dist/js/bootstrap.min.js"></script>
-    
 </body>
-
 </html>
