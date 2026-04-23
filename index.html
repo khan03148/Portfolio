@@ -18,12 +18,14 @@ body {
   color:#e2e8f0;
 }
 
+/* Layout */
 .container { width:90%; margin:auto; }
-.section { padding:70px 0; }
+.section { padding:50px 0; }
 
+/* Headings */
 .section h2 {
-  font-size:28px;
-  margin-bottom:20px;
+  font-size:26px;
+  margin-bottom:15px;
   position:relative;
   display:inline-block;
 }
@@ -38,20 +40,35 @@ body {
   left:0;
 }
 
+/* HERO */
 header {
   text-align:center;
-  padding:100px 20px;
+  padding:80px 20px;
 }
 
-h1 { font-size:42px; }
+/* Animated Name */
+h1 {
+  font-size:42px;
+  background:linear-gradient(270deg,#38bdf8,#6366f1,#38bdf8);
+  background-size:200% 200%;
+  -webkit-background-clip:text;
+  color:transparent;
+  animation:shine 4s ease infinite;
+}
+
+@keyframes shine {
+  0%{background-position:0%;}
+  50%{background-position:100%;}
+  100%{background-position:0%;}
+}
 
 /* Buttons */
 .btn {
   display:inline-flex;
   align-items:center;
   gap:8px;
-  margin:10px;
-  padding:12px 25px;
+  margin:8px;
+  padding:10px 22px;
   border-radius:30px;
   text-decoration:none;
   color:white;
@@ -61,39 +78,47 @@ h1 { font-size:42px; }
 }
 
 .btn:hover {
-  transform:translateY(-4px) scale(1.05);
+  transform:translateY(-3px) scale(1.05);
   box-shadow:0 0 15px rgba(56,189,248,0.6);
 }
 
-.btn-secondary {
-  background:#1e293b;
-}
-
-/* Grid & Cards */
+/* Grid */
 .grid {
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:20px;
+  gap:18px;
 }
 
+/* Cards */
 .card {
   background:#1e293b;
-  padding:20px;
-  border-radius:15px;
+  padding:18px;
+  border-radius:12px;
   transition:0.3s;
-  margin-bottom:20px;
 }
 
 .card:hover {
-  transform:translateY(-8px);
+  transform:translateY(-6px);
 }
 
 /* Footer */
 footer {
   background:#020617;
-  padding:40px 0;
+  padding:35px 0;
   text-align:center;
-  margin-top:50px;
+}
+
+/* Animated contact text */
+.footer-title {
+  font-size:18px;
+  margin-bottom:10px;
+  animation:pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%{opacity:1;}
+  50%{opacity:0.6;}
+  100%{opacity:1;}
 }
 
 .footer-icons a {
@@ -108,8 +133,10 @@ footer {
   transform:scale(1.2);
 }
 
+/* Responsive */
 @media(max-width:768px){
   h1 { font-size:28px; }
+  .section { padding:40px 0; }
 }
 
 </style>
@@ -138,7 +165,6 @@ footer {
     Cloud Engineer and AWS Certified Solutions Architect with 5+ years of experience in frontend development.
     Transitioned into Cloud and DevOps through hands-on projects and real-world implementations.
     Experienced in Linux, Git, GitHub, Docker, containerization, and CI/CD pipelines.
-    Strong focus on building scalable and reliable systems.
   </p>
 </section>
 
@@ -147,41 +173,29 @@ footer {
   <h2>Experience</h2>
 
   <div class="card">
-    <h3>Frontend Developer – UnitedPrint GmbH (2021–2024)</h3>
+    <h3>Frontend Developer – UnitedPrint</h3>
     <ul>
-      <li>Developed scalable applications using React</li>
-      <li>Testing, debugging, and release management</li>
-      <li>Agile workflows with Git, Jira, Confluence</li>
-      <li>Worked with Docker, Linux, Git, and CI/CD pipelines</li>
+      <li>React development</li>
+      <li>Testing & debugging</li>
+      <li>Docker, Linux, Git, CI/CD</li>
     </ul>
   </div>
 
   <div class="card">
-    <h3>Web Developer – Intelligent Graphics AG (2021)</h3>
+    <h3>Web Developer – Intelligent Graphics</h3>
     <ul>
-      <li>3D configurator UI development</li>
-      <li>React, TypeScript, GraphQL, Prisma</li>
-      <li>Testing with Cypress & MSW</li>
-      <li>Worked with Docker, Linux, Git, and CI/CD pipelines</li>
+      <li>3D UI systems</li>
+      <li>GraphQL, Prisma</li>
+      <li>Docker, Linux, CI/CD</li>
     </ul>
   </div>
 
   <div class="card">
-    <h3>Frontend Developer – Incowia GmbH (2020)</h3>
+    <h3>Frontend Developer – Incowia</h3>
     <ul>
-      <li>Digital Stage project with responsive UI</li>
-      <li>React, TypeScript, SCSS, Material UI</li>
-      <li>Version control using Git & GitHub</li>
-      <li>Worked with Linux, Docker, and CI/CD pipelines</li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <h3>Internship – Civil Secretariat, Pakistan (2017–2018)</h3>
-    <ul>
-      <li>Web development using HTML, CSS, JavaScript</li>
-      <li>Database development using SQL</li>
-      <li>Document management using MS Office</li>
+      <li>Responsive UI</li>
+      <li>React & SCSS</li>
+      <li>Git, Docker, CI/CD</li>
     </ul>
   </div>
 
@@ -192,42 +206,21 @@ footer {
   <h2>Skills</h2>
 
   <div class="grid">
+    <div class="card"><h3>Programming</h3><p>JS, TS, Python</p></div>
+    <div class="card"><h3>Cloud</h3><p>AWS (EC2, S3, VPC)</p></div>
+    <div class="card"><h3>DevOps</h3><p>Docker, K8s, CI/CD</p></div>
+    <div class="card"><h3>Tools</h3><p>Git, Jira, GitHub</p></div>
+  </div>
+</section>
 
-    <div class="card">
-      <h3>Programming</h3>
-      <ul><li>JavaScript</li><li>TypeScript</li><li>Python</li></ul>
-    </div>
+<!-- DEVOPS PROJECTS -->
+<section class="section container">
+  <h2>DevOps & Cloud Projects</h2>
 
-    <div class="card">
-      <h3>Cloud & AWS</h3>
-      <ul><li>EC2</li><li>S3</li><li>IAM</li><li>VPC</li><li>RDS</li><li>Lambda</li></ul>
-    </div>
-
-    <div class="card">
-      <h3>DevOps</h3>
-      <ul><li>Docker</li><li>Kubernetes</li><li>Terraform</li><li>Ansible</li><li>CI/CD</li></ul>
-    </div>
-
-    <div class="card">
-      <h3>Tools & Management</h3>
-      <ul><li>Git</li><li>GitHub</li><li>Bitbucket</li><li>Jira</li><li>Confluence</li></ul>
-    </div>
-
-    <div class="card">
-      <h3>Frontend</h3>
-      <ul><li>React</li><li>Next.js</li><li>Redux</li><li>HTML/CSS</li></ul>
-    </div>
-
-    <div class="card">
-      <h3>Backend</h3>
-      <ul><li>Node.js</li><li>Express</li><li>GraphQL</li></ul>
-    </div>
-
-    <div class="card">
-      <h3>Databases</h3>
-      <ul><li>MySQL</li><li>PostgreSQL</li></ul>
-    </div>
-
+  <div class="card">
+    <h3>CI/CD Pipeline Project</h3>
+    <p>AWS + Docker + GitHub Actions</p>
+    <a class="btn" href="https://github.com/khan03148">GitHub</a>
   </div>
 </section>
 
@@ -249,31 +242,20 @@ footer {
     <div class="card">
       <h3>E-Commerce</h3>
       <a class="btn" href="https://e-commercee.netlify.app/">Live</a>
-      <a class="btn btn-secondary" href="https://github.com/khan03148">GitHub</a>
+      <a class="btn" href="https://github.com/khan03148">GitHub</a>
     </div>
 
     <div class="card">
       <h3>Beach Restaurant</h3>
       <a class="btn" href="https://khan03148.github.io/BeachResturant/">Live</a>
-      <a class="btn btn-secondary" href="https://github.com/khan03148">GitHub</a>
+      <a class="btn" href="https://github.com/khan03148">GitHub</a>
     </div>
-  </div>
-</section>
-
-<!-- DEVOPS PROJECTS -->
-<section class="section container">
-  <h2>DevOps & Cloud Projects</h2>
-
-  <div class="card">
-    <h3>CI/CD + Docker + AWS Deployment</h3>
-    <p>Automated build and deployment using GitHub Actions and Docker.</p>
-    <a class="btn" href="https://github.com/khan03148">GitHub</a>
   </div>
 </section>
 
 <!-- FOOTER -->
 <footer>
-  <p>Get in touch</p>
+  <div class="footer-title">✨ Get in touch ✨</div>
 
   <div class="footer-icons">
     <a href="mailto:khan03148@gmail.com"><i class="fas fa-envelope"></i></a>
