@@ -3,45 +3,75 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Jahangir Khan | Cloud Engineer</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
+
 body {
   margin:0;
-  font-family: 'Poppins', sans-serif;
+  font-family:'Poppins',sans-serif;
   background:#0f172a;
   color:#e2e8f0;
 }
 
-.container {
-  width:90%;
-  margin:auto;
+/* Layout */
+.container { width:90%; margin:auto; }
+.section { padding:70px 0; }
+
+/* Headings */
+.section h2 {
+  font-size:28px;
+  margin-bottom:20px;
+  position:relative;
+  display:inline-block;
 }
 
+.section h2::after {
+  content:"";
+  width:50%;
+  height:3px;
+  background:#38bdf8;
+  position:absolute;
+  bottom:-5px;
+  left:0;
+  transition:0.3s;
+}
+
+.section h2:hover::after {
+  width:100%;
+}
+
+/* Hero */
 header {
   text-align:center;
   padding:100px 20px;
 }
 
-h1 { font-size:40px; }
-h2 { color:#38bdf8; }
+h1 { font-size:42px; }
 
+/* Buttons */
 .btn {
   display:inline-block;
   margin:10px;
-  padding:10px 20px;
-  border-radius:8px;
+  padding:12px 25px;
+  border-radius:30px;
   text-decoration:none;
   color:white;
-  background:#1e293b;
+  font-weight:500;
+  background:linear-gradient(135deg,#38bdf8,#6366f1);
+  transition:0.3s;
 }
 
-.section {
-  padding:60px 0;
+.btn:hover {
+  transform:translateY(-3px);
+  box-shadow:0 10px 20px rgba(0,0,0,0.5);
 }
 
+/* Cards */
 .grid {
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
@@ -56,24 +86,38 @@ h2 { color:#38bdf8; }
 }
 
 .card:hover {
-  transform:translateY(-10px);
+  transform:translateY(-8px);
 }
 
-ul { padding-left:20px; }
-
+/* Badges */
 .badge {
   display:inline-block;
+  margin:5px;
+  padding:6px 12px;
   background:#38bdf8;
   color:#000;
-  padding:5px 10px;
-  margin:5px;
-  border-radius:6px;
+  border-radius:8px;
   font-size:12px;
 }
 
-@media(max-width:768px){
-  h1 {font-size:28px;}
+/* Contact */
+.contact-icons a {
+  margin:10px;
+  font-size:24px;
+  color:#38bdf8;
+  transition:0.3s;
 }
+
+.contact-icons a:hover {
+  color:#fff;
+  transform:scale(1.2);
+}
+
+/* Responsive */
+@media(max-width:768px){
+  h1 { font-size:28px; }
+}
+
 </style>
 </head>
 
@@ -86,27 +130,23 @@ ul { padding-left:20px; }
 
   <p>
     Cloud Engineer | AWS Certified Solutions Architect | DevOps Engineer  
-    <br>5+ Years Frontend Development Experience
+    <br>5+ Years Experience (React | Cloud | DevOps)
   </p>
 
-  <a class="btn" href="https://github.com/khan03148">GitHub</a>
-  <a class="btn" href="https://www.linkedin.com/in/jahangir-khan-0337ab174">LinkedIn</a>
+  <a class="btn" href="https://github.com/khan03148"><i class="fab fa-github"></i> GitHub</a>
+  <a class="btn" href="https://www.linkedin.com/in/jahangir-khan-0337ab174"><i class="fab fa-linkedin"></i> LinkedIn</a>
 </header>
 
 <!-- ABOUT -->
 <section class="section container">
   <h2>About Me</h2>
+
   <p>
     Cloud Engineer and AWS Certified Solutions Architect with 5+ years of experience in frontend development.
-    Recently transitioned into DevOps through hands-on projects and AWS training.
+    Transitioned into Cloud and DevOps with hands-on experience and real-world projects.
+    Strong experience working with Linux, Git, GitHub, Docker, containerization, and CI/CD pipelines in professional environments.
   </p>
 
-  <ul>
-    <li>AWS Certified Cloud Practitioner</li>
-    <li>AWS Certified Solutions Architect – Associate</li>
-    <li>AWS re/Start Graduate</li>
-    <li>Experience with Docker, Linux, CI/CD pipelines</li>
-  </ul>
 </section>
 
 <!-- EXPERIENCE -->
@@ -116,9 +156,9 @@ ul { padding-left:20px; }
   <div class="card">
     <h3>Frontend Developer – UnitedPrint GmbH (2021–2024)</h3>
     <ul>
-      <li>Developed scalable React applications</li>
-      <li>Testing, debugging, and release cycles</li>
-      <li>Agile work with Git, Jira, Confluence</li>
+      <li>Developed scalable applications using React</li>
+      <li>Testing, debugging, and release management</li>
+      <li>Agile workflows with Git, Jira, Confluence</li>
     </ul>
   </div>
 
@@ -127,7 +167,7 @@ ul { padding-left:20px; }
     <ul>
       <li>3D configurator UI development</li>
       <li>Docker, GraphQL, Prisma usage</li>
-      <li>Cypress testing</li>
+      <li>Testing with Cypress</li>
     </ul>
   </div>
 
@@ -140,52 +180,54 @@ ul { padding-left:20px; }
   <div class="grid">
 
     <div class="card">
-      <h3>Cloud & DevOps</h3>
-      <span class="badge">AWS</span>
-      <span class="badge">Docker</span>
-      <span class="badge">CI/CD</span>
-      <span class="badge">Terraform</span>
-      <span class="badge">Ansible</span>
-      <span class="badge">Kubernetes</span>
-    </div>
-
-    <div class="card">
-      <h3>Monitoring & AI</h3>
-      <span class="badge">Prometheus</span>
-      <span class="badge">Grafana</span>
-      <span class="badge">Loki</span>
-      <span class="badge">GitHub Copilot</span>
-      <span class="badge">Amazon Q</span>
+      <h3>Programming</h3>
+      <p>JavaScript, TypeScript, Python</p>
     </div>
 
     <div class="card">
       <h3>Frontend</h3>
-      <span class="badge">React</span>
-      <span class="badge">TypeScript</span>
-      <span class="badge">Redux</span>
-      <span class="badge">Next.js</span>
+      <p>React, Next.js, Redux, HTML, CSS, SCSS</p>
+    </div>
+
+    <div class="card">
+      <h3>Backend</h3>
+      <p>Node.js, Express, GraphQL</p>
+    </div>
+
+    <div class="card">
+      <h3>Cloud & AWS</h3>
+      <p>EC2, S3, IAM, VPC, RDS, Lambda</p>
+    </div>
+
+    <div class="card">
+      <h3>DevOps</h3>
+      <p>Docker, Kubernetes, Terraform, Ansible, CI/CD</p>
+    </div>
+
+    <div class="card">
+      <h3>Databases</h3>
+      <p>MySQL, PostgreSQL</p>
+    </div>
+
+    <div class="card">
+      <h3>Tools & Management</h3>
+      <p>Git, GitHub, Bitbucket, Jira, Confluence</p>
     </div>
 
   </div>
 </section>
 
-<!-- DEVOPS LEARNING -->
+<!-- CERTIFICATIONS -->
 <section class="section container">
-  <h2>DevOps Training & Projects</h2>
+  <h2>Certifications</h2>
 
   <div class="card">
-    <p>
-      Completed a full DevOps learning path covering Linux, AWS, CI/CD, Terraform,
-      Ansible, Docker, Kubernetes, and Monitoring tools.
-    </p>
-
-    <ul>
-      <li>Built CI/CD pipelines using Jenkins, GitHub Actions, GitLab</li>
-      <li>Deployed applications on AWS and Kubernetes</li>
-      <li>Infrastructure as Code using Terraform</li>
-      <li>Monitoring using Prometheus & Grafana</li>
-      <li>GitOps workflows and automation</li>
-    </ul>
+    <p>AWS Certified Cloud Practitioner</p>
+    <p>AWS Certified Solutions Architect – Associate</p>
+    <p>AWS re/Start Graduate</p>
+    <p>HTML, CSS, JavaScript – Coursera</p>
+    <p>German B1 – TELC</p>
+    <p>Microsoft Office Specialist</p>
   </div>
 </section>
 
@@ -196,56 +238,66 @@ ul { padding-left:20px; }
   <div class="grid">
 
     <div class="card">
-      <h3>Infowerk</h3>
-      <p>React | TypeScript | Redux</p>
-      <a class="btn" href="https://infowerk.com/de">Live</a>
-    </div>
-
-    <div class="card">
-      <h3>3D Configurator</h3>
-      <p>React | GraphQL | Docker</p>
-      <a class="btn" href="https://www.intelligentgraphics.ag/">Live</a>
-    </div>
-
-    <div class="card">
-      <h3>DevOps Projects</h3>
+      <h3>DevOps Project</h3>
       <p>AWS | Docker | Kubernetes | CI/CD</p>
+      <a class="btn" href="https://github.com/khan03148">GitHub</a>
+    </div>
+
+    <div class="card">
+      <h3>E-Commerce</h3>
+      <a class="btn" href="https://e-commercee.netlify.app/">Live</a>
+      <a class="btn" href="https://github.com/khan03148">GitHub</a>
+    </div>
+
+    <div class="card">
+      <h3>Beach Restaurant</h3>
+      <a class="btn" href="https://khan03148.github.io/BeachResturant/">Live</a>
+      <a class="btn" href="https://github.com/khan03148">GitHub</a>
     </div>
 
   </div>
+
+  <h3 style="margin-top:40px;">More...</h3>
+
+  <ul>
+    <li>E-Commerce → Live | GitHub</li>
+    <li>Restaurant → Live | GitHub</li>
+  </ul>
+
 </section>
 
 <!-- CONTACT -->
 <section class="section container">
   <h2>Contact</h2>
-  <p>Email: khan03148@gmail.com</p>
-  <p>Location: Ilmenau, Germany</p>
+
+  <div class="contact-icons">
+    <a href="mailto:khan03148@gmail.com"><i class="fas fa-envelope"></i></a>
+    <a href="https://www.linkedin.com/in/jahangir-khan-0337ab174"><i class="fab fa-linkedin"></i></a>
+    <a href="https://github.com/khan03148"><i class="fab fa-github"></i></a>
+  </div>
+
 </section>
 
 <!-- TYPING -->
 <script>
-const words = ["Cloud Engineer", "AWS Certified", "DevOps Engineer"];
-let i = 0, j = 0, current = "", isDeleting = false;
+const words=["Cloud Engineer","AWS Certified","DevOps Engineer"];
+let i=0,j=0,current="",isDeleting=false;
 
-function type() {
-  current = words[i];
-  if (isDeleting) j--;
-  else j++;
+function type(){
+current=words[i];
+if(isDeleting){j--;} else{j++;}
 
-  document.getElementById("typing").innerText = current.substring(0, j);
+document.getElementById("typing").innerText=current.substring(0,j);
 
-  if (!isDeleting && j === current.length) {
-    isDeleting = true;
-    setTimeout(type, 1000);
-    return;
-  }
+if(!isDeleting && j===current.length){
+isDeleting=true; setTimeout(type,1000); return;
+}
 
-  if (isDeleting && j === 0) {
-    isDeleting = false;
-    i = (i + 1) % words.length;
-  }
+if(isDeleting && j===0){
+isDeleting=false; i=(i+1)%words.length;
+}
 
-  setTimeout(type, isDeleting ? 50 : 100);
+setTimeout(type,isDeleting?50:100);
 }
 
 type();
